@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  ubuntuos:
+    #image: ubuntu:20.04
+    build: .
+    platform: linux/amd64  
+    #command: tail -F anything
