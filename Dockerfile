@@ -11,11 +11,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 
 RUN apt update
-RUN apt install wget unzip build-essential liblzma-dev liblzo2-dev zlib1g-dev 
-binwalk mtd-utils gzip bzip2 tar arj lhasa p7zip p7zip-full cabextract  cramfsswap 
-squashfs-tools sleuthkit default-jdk lzop srecord python3-dev automake flex bison 
-libglib2.0-dev libpixman-1-dev clang python3-setuptools llvm python3-pip git cmake 
-build-essential libtool-bin
+RUN apt install wget unzip build-essential liblzma-dev liblzo2-dev zlib1g-dev binwalk mtd-utils gzip bzip2 tar arj lhasa p7zip p7zip-full cabextract  cramfsswap squashfs-tools sleuthkit default-jdk lzop srecord python3-dev automake flex bison libglib2.0-dev libpixman-1-dev clang python3-setuptools llvm python3-pip git cmake build-essential libtool-bin
 
 RUN pip3 install qiling
 
